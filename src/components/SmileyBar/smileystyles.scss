@@ -1,0 +1,30 @@
+/* Smiley Bar */
+#smiley-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: darkslategray;
+  color: ivory;
+  border: 2px solid black;
+  height: 25px;
+  vertical-align: auto;
+  .smiley-guy {
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    display: inline-block;
+    height: 20px;
+    padding: 2.5px 12.5px 2.5px 12.5px;
+  }
+  #dead-guy {
+    background-image: url(#{$Cloudfront}/mine-images/dead-face.jpg);
+  }
+  #victory-guy {
+    background-image: url(#{$Cloudfront}/mine-images/victory-face.jpg);
+  }
+  #flags-remaining {
+    padding-left: 10px;
+    position: relative;
+  }
+}

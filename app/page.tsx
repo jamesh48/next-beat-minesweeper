@@ -1,12 +1,15 @@
-import Image from 'next/image';
 import styles from './page.module.css';
-import Minesweeper from '../components/Minesweeper/Minesweeper';
+import Minesweeper from '../index';
+import { Box } from '@mui/material';
 
 const Home = () => {
   return (
-    <main className={styles.main}>
+    <Box
+      className="main"
+      sx={{ height: '100%', backgroundColor: 'darkslategray' }}
+    >
       <Minesweeper />
-    </main>
+    </Box>
   );
 };
 
